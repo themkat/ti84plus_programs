@@ -1,6 +1,10 @@
 * TI84 Plus Basic programs
 TODO: any info on building + running?
 
+
+[[https://github.com/miselin/tibasic][TIBasic]] is used for building to a format the calculator understands. After building, the =.8xp= files can be transferred to the calculator directly. I just use the file names (without the extension) as the program names.
+
+
 ** Program info
 Here I try to mention any relevant information on the programs.
 
