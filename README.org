@@ -1,0 +1,11 @@
+* TI84 Plus Basic programs
+TODO: any info on building + running?
+
+** Program info
+Here I try to mention any relevant information on the programs.
+
+*** x2solve
+Quadratic equation solver. =AX^2 + BX + C = 0= Handles linear equations as well with =A=0=.
+
+*** dot
+Warning: Uses A and B matrix slots, and therefore overrides them even if they are currently in use.
