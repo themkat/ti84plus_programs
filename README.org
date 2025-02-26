@@ -13,3 +13,9 @@ Quadratic equation solver. =AX^2 + BX + C = 0= Handles linear equations as well 
 
 *** dot
 Warning: Uses A and B matrix slots, and therefore overrides them even if they are currently in use.
+
+*** getcol
+Get a column C from a matrix. Fill in expected column in Ans, and matrix in matrix slot A. Uses matrix slot I for storage.
+
+
+Result is found in Ans.
