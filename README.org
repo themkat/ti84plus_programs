@@ -19,3 +19,6 @@ Get a column C from a matrix. Fill in expected column in Ans, and matrix in matr
 
 
 Result is found in Ans.
+
+*** QRDecomp
+QR factorization/decomposition using Gram Schmidt process. Uses way too many matrix slots as working variables while calculating the Gram Schmidt process. Can probably be optimized. TI Basic gets hard to read once programs get big... Calculates result in matrix slot B and C.
