@@ -17,8 +17,8 @@ Then
 ([neg]C/B)->X
 Disp "X = ",X
 Else
-((B+[root]^2S))/(2*A))->X
-((B-[root]^2S))/(2*A))->Y
+(([neg]B+[root]^2S))/(2*A))->X
+(([neg]B-[root]^2S))/(2*A))->Y
 Disp "X = ",X
 Disp "X = ",Y
 End
