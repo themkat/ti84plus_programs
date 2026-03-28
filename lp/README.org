@@ -1,0 +1,9 @@
+* Linear Programming/Optimization Basic programs
+Simple (pun intended) versions of linear programming programs. You probably don't need advanced solvers on your calculator anyway...?
+
+
+*NOTE:* These programs are made for fun, and are not guaranteed to be perfect. There might be bugs or inconsistencies. Feel free to report them as issues if you want to :)
+
+
+- =simplex.bas=: The primal simplex algorithm. Matrices A, B and C are expected to be the matrix A and vectors b and c from the standard form of a linear programming maximization problem. Non-negativity constraints are implicit. No phase one or other infeasible handling present. Uses matrix slots D and E for storage during computations. The full matrix (including slack) is found in the slot D. 
+- =duallp.bas=: Augments matrices A, B and C to be the dual problem of the currently registered linear programming problem. NOTE: This uses the negative transpose property to change A, B and C matrix slots. Uses the E matrix slot for temporary storage.
