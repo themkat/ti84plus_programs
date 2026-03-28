@@ -8,8 +8,17 @@ Ans(1)->B
 dim([C])
 Ans(1)->C
 
-"TODO sanity check row/height"
-
+"sanity check row/height"
+If B!=M
+Then
+Disp "A AND B DIM ERR"
+Stop
+End
+If C!=N
+Then
+Disp "A AND C DIM ERR"
+Stop
+End
 
 "create expanded matrix in D"
 augment([A],augment(identity(M),[B]))->[D]
