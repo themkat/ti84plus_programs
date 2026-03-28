@@ -29,7 +29,7 @@ Fill(0,[E])
 augment([C][transpose],[E][transpose])[transpose]->[E]
 augment([E],[D][transpose])[transpose]->[D]
 
-"feasible or not"
+"any improvements possible"
 Matr->list([D][transpose],L1)
 max(L1)->C
 
@@ -75,7 +75,7 @@ For(A,S+1,M+1)
 *row+([neg][D](A,L),[D],S,A)->[D]
 End
 
-"feasible or not"
+"any improvements possible"
 Matr->list([D][transpose],L1)
 max(L1)->C
 
