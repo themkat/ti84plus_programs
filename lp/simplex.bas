@@ -82,5 +82,45 @@ max(L1)->C
 (I+1)->I
 End
 
+
+"save X values to E"
+{N,1}->dim([E])
+Fill(0,[E])
+For(I,1,N)
+Matr->list([D],I,L1)
+sum(L1=1)->C
+sum(L1=0)->D
+
+If C!=1|D!=M
+Goto NX
+
+For(J,2,M+1)
+If [D](J,I)=1
+[D](J,M+N+1)->[E](I,1)
+End
+Lbl NX
+End
+
+"save slack variables W to F"
+{M,1}->dim([F])
+Fill(0,[F])
+For(I,N+1,M+N)
+Matr->list([D],I,L1)
+sum(L1=1)->C
+sum(L1=0)->D
+
+If C!=1|D!=M
+Goto NW
+
+For(J,2,M+1)
+If [D](J,I)=1
+Then
+[D](J,M+N+1)->[F](I-N,1)
+(M+1)->J
+End
+End
+Lbl NW
+End
+
 "the solution"
 [neg][D](1,M+N+1)
