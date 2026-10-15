@@ -28,3 +28,10 @@ Result is found in Ans.
 
 *** QRDecomp
 QR factorization/decomposition using Gram Schmidt process. Uses way too many matrix slots as working variables while calculating the Gram Schmidt process. Can probably be optimized. TI Basic gets hard to read once programs get big... Calculates result in matrix slot B and C.
+
+*** QR iterations (finding eigenvalues)
+*NOTE: Does seem to converge to something for the matrices I've tried, but I still need to debug and see if there are any issues. Some numerical inaccuracies happen, probably because of QR decomposition using Gram-Schmidt instead of Householder transforms or Givens rotations.*
+
+
+Uses the above QR factorization/decomposition to find eigenvalues. Due to the above algorithm using too many matrix slots, the resulting matrix is saved in matrix slot I. If it converged after the set number of iterations, the diagonal should contain the eigenvalues. The matrix should in theory have converged to  a triangular matrix with zeros (or close) below the diagonal. Only symmetric matrices has guaranteed convergence. AFAIK, the columns of matrix Q (in slot B) should in those cases converge to the eigenvectors of our matrix. I need to look more  into the theory later, but wanted a quick tool to verify eigenvalue calculations :)
+ 
