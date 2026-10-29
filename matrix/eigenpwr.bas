@@ -4,11 +4,10 @@ Ans(1)->R
 {R,1}->dim([B])
 Fill(1,[B])
 
-Input "MAX ITER=",M
 0->I
 1000->E
 
-While I<M&E>0.0001
+While I<1000000&E>0.0001
 [B]->[C]
 [A]*[B]
 Ans->[B]
