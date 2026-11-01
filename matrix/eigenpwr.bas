@@ -12,26 +12,26 @@ While I<1000000&E>0.0001
 [A]*[B]
 Ans->[B]
 
+"eigenvalue"
+[B][transpose]*[A]*[B]
+Ans(1,1)->U
+[B][transpose]*[B]
+Ans(1,1)->L
+(U/L)->A
+
+"check convergence"
+[B]-A*[C]
+Ans[transpose]*Ans
+([root]^2(Ans(1,1)))->E
+
 "ugly way of calculating length"
 [B][transpose]*[B]
 ([root]^2(Ans(1,1)))->L
-
 (1/L)*[B]->[B]
-
-"check convergence"
-[B]-[C]
-Ans[transpose]*Ans
-([root]^2(Ans(1,1)))->E
 
 (I+1)->I
 End
 
 Disp "ITERS: ",I
 
-"eigenvalue"
-[B][transpose]*[A]*[B]
-Ans(1,1)->U
-[B][transpose]*[B]
-Ans(1,1)->L
-U/L
-Disp "lambda=",Ans
+A
