@@ -22,6 +22,10 @@ A->[F](K,K)
 [B]->[I]
 
 "SIMILARITY TRANSFORM"
+dim([A])
+Ans(2)->D
+If D>1
+Then
 [B][transpose]*[B]
 [root]^2(Ans(1,1)))
 ([B](1,1)+Ans)->[B](1,1)
@@ -29,11 +33,6 @@ A->[F](K,K)
 identity(N-Q)-(2*([B]*[B][transpose])*(1/Ans(1,1)))
 Ans->[D]
 ([D]*[A]*[D])->[C]
-dim([A])
-Ans(2)->D
-
-If D>0
-Then
 {D-1,D-1}->dim([A])
 
 "FILL CUTOFF MATRIX"
